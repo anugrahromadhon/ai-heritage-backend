@@ -106,3 +106,8 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`Focus: Kampung Lawas Maspati, Surabaya`);
   console.log(`Health check: port ${PORT}/health`);
 });
+
+// Tambahkan ini di server.js kamu
+app.get('/', (req, res) => {
+  res.send('Backend Chatbot berhasil berjalan!'); 
+});
