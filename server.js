@@ -100,14 +100,9 @@ app.get("/health", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-  console.log(`Model: llama-3.1-8b-instant via Groq`);
-  console.log(`Focus: Kampung Lawas Maspati, Surabaya`);
-  console.log(`Health check: http://localhost:${PORT}/health`);
-});
-
-const PORT = process.env.PORT || 3001;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Model: llama-3.1-8b-instant via Groq`);
+  console.log(`Focus: Kampung Lawas Maspati, Surabaya`);
+  console.log(`Health check: port ${PORT}/health`);
 });
